@@ -57,7 +57,7 @@
       </div>
       <div class="row" id="varios" style="display: none">
         <div class="col col-xs-12">
-          <p class="text-red">-1 = Inasistente (I) <br /> -2 = No Presento(NP)</p>
+          <p class="text-red noDimensiones">-1 = Inasistente (I) <br /> -2 = No Presento(NP)</p>
         </div>
         <div class="col col-xs-12">
           <button class="btn btn-success " type="submit" id="btnGuardar"><i class="fa fa-upload"></i> Guardar</button>
@@ -739,18 +739,27 @@
                 input.appendChild(miOption1);
 
                 var miOption2=document.createElement("option");
-                miOption2.setAttribute("value",15);
+                miOption2.setAttribute("value",17);
                 miOption2.setAttribute("label","B");
                 miOption2.innerHTML = "B";
                 // Añadimos el option al select
                 input.appendChild(miOption2);
 
                 var miOption3=document.createElement("option");
-                miOption3.setAttribute("value",10);
+                miOption3.setAttribute("value",14);
                 miOption3.setAttribute("label","C");
                 miOption3.innerHTML = "C";
                 // Añadimos el option al select
                 input.appendChild(miOption3);
+
+                var miOption3=document.createElement("option");
+                miOption3.setAttribute("value",11);
+                miOption3.setAttribute("label","D");
+                miOption3.innerHTML = "D";
+                // Añadimos el option al select
+                input.appendChild(miOption3);
+
+
               }
               
               if (lapso == 1 ) {
