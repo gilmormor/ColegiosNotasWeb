@@ -466,7 +466,7 @@ class NotaController extends Controller{
       ->OrderBy('ced_alum','asc')
       ->OrderBy('tipo','asc')
       ->OrderBy('des','asc')
-      ->get();
+      ->get(); 
       if (sizeof($notas) > 0) {
         return view ('evaluaciones.boletines')
         ->with('colegio',$colegio)

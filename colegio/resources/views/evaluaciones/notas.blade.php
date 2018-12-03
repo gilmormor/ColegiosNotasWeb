@@ -59,7 +59,7 @@
         <div class="col col-xs-12">
           <p class="text-red noDimensiones">-1 = Inasistente (I) <br /> -2 = No Presento(NP)</p>
         </div>
-        <div class="col col-xs-12">
+        <div class="col col-xs-12"> 
           <button class="btn btn-success " type="submit" id="btnGuardar"><i class="fa fa-upload"></i> Guardar</button>
           <button class="btn btn-danger noDimensiones" type="button" onclick="pdf();" id="btnPDF" data-toggle="tooltip" title="Reporte de evaluacion por lapso"><i class="fa fa-print"></i> Reporte</button>
           <button class="btn btn-danger noDimensiones" type="button" onclick="pdf2();" id="btnPDF" title="Reporte Actuación general del Estudiante"><i class="fa fa-print"></i> Rep Act</button>

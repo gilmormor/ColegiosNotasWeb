@@ -5,6 +5,7 @@
 /node_modules
 .idea/
 .DS_Store
+.phpintel
 
 /node_modules
 /public/hot
