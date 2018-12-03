@@ -618,7 +618,7 @@
         for (var i = 0; i < cantP; i++) {
           var td = document.createElement("td");
           td.innerHTML = "N "+(i+1);
-          td.setAttribute("width","3%");
+          td.setAttribute("width","7%");
           tr.appendChild(td);
 
           var td = document.createElement("td");
@@ -718,7 +718,41 @@
           if (cantP >= 1) {
 
               td = document.createElement("td");
-              input = document.createElement("input");
+              if(aux_cualit == 0){
+                input = document.createElement("input");
+              }else{
+                input = document.createElement("select");
+                var miOption=document.createElement("option");
+                // Añadimos las propiedades value y label
+                miOption.setAttribute("value",0);
+                miOption.setAttribute("label","");
+                miOption.innerHTML = "";
+                // Añadimos el option al select
+                input.appendChild(miOption);
+
+                var miOption1=document.createElement("option");
+                // Añadimos las propiedades value y label
+                miOption1.setAttribute("value",20);
+                miOption1.setAttribute("label","A");
+                miOption1.innerHTML = "A";
+                // Añadimos el option al select
+                input.appendChild(miOption1);
+
+                var miOption2=document.createElement("option");
+                miOption2.setAttribute("value",15);
+                miOption2.setAttribute("label","B");
+                miOption2.innerHTML = "B";
+                // Añadimos el option al select
+                input.appendChild(miOption2);
+
+                var miOption3=document.createElement("option");
+                miOption3.setAttribute("value",10);
+                miOption3.setAttribute("label","C");
+                miOption3.innerHTML = "C";
+                // Añadimos el option al select
+                input.appendChild(miOption3);
+              }
+              
               if (lapso == 1 ) {
                 input.value = reponse.notas[i].nota1_1;
               }
